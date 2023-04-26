@@ -15,3 +15,12 @@ func TestOutput(t *testing.T) {
 	// Assert
 	assert.Equal(t, param, output, "output should be a string and have a same value")
 }
+
+func TestOutputInt(t *testing.T) {
+	// Arrang
+	var param int = 101
+	// Action
+	output := output.OutputInt(param)
+	// Assert
+	assert.Equal(t, param, output, "output should be a int and have same value")
+}
