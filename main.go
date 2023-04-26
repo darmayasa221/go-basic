@@ -1,7 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/darmayasa221/go-basic/output"
+)
 
 func main() {
-	fmt.Println("hello world")
+	fmt.Println(output.Output("hay"))
 }
