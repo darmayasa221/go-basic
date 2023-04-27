@@ -1,5 +1,9 @@
 package math
 
 func Iteration(c string) string {
-	return c
+	var result string
+	for i := 0; i < 5; i++ {
+		result += c
+	}
+	return result
 }
