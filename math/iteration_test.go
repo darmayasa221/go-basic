@@ -16,3 +16,8 @@ func TestIteration(t *testing.T) {
 	// Assert
 	assert.Equal(t, result, iteration, "param should be iterat 5x ")
 }
+func BenchmarkIteration(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		math.Iteration("a")
+	}
+}
